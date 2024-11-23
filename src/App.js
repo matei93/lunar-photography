@@ -1,3 +1,4 @@
+import { database, storage, firebaseApp } from "./firebase/config";
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavBar from "./components/layout/NavBar/NavBar";
