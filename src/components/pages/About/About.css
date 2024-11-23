@@ -1,0 +1,48 @@
+.about-me {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 110px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.about-me-text {
+  text-align: left;
+  font-family: -apple-system, BlinkMacSystemFont, "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  max-width: 600px;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.about-me-image img {
+  width: 100%;
+  max-width: 572px;
+  height: 500px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .about-me {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-me-image {
+    order: -1;
+    margin-bottom: 20px;
+  }
+
+  .about-me-text {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
