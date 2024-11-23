@@ -17,4 +17,11 @@ const firebaseApp = initializeApp(firebaseConfig);
 const storage = getStorage(firebaseApp);
 const database = getFirestore(firebaseApp);
 
-export { database, storage, firebaseApp };
+// Free tier limits
+const LIMITS = {
+  MAX_FILE_SIZE: 5 * 1024 * 1024, // 5MB
+  MAX_STORAGE: 1 * 1024 * 1024 * 1024, // 1GB
+  DAILY_DOWNLOADS: 1 * 1024 * 1024 * 1024, // 1GB/day
+};
+
+export { storage, db, LIMITS };
