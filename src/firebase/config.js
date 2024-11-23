@@ -1,20 +1,20 @@
-import firebase from "firebase/compat/app";
-import "firebase/compat/database";
-import "firebase/compat/storage";
+import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
+import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
+  apiKey: "AIzaSyBYLZRnX4CNFbwQgWB1lSYe_taUE0angKU",
   authDomain: "lunar-website-aaeba.firebaseapp.com",
+  databaseURL: "https://lunar-website-aaeba-default-rtdb.europe-west1.firebasedatabase.app",
   projectId: "lunar-website-aaeba",
   storageBucket: "lunar-website-aaeba.appspot.com",
   messagingSenderId: "565144491398",
-  appId: "YOUR_APP_ID",
-  measurementId: "YOUR_MEASUREMENT_ID",
+  appId: "1:565144491398:web:0f21e20b04ff3545b98807",
+  measurementId: "G-M0VJXTMNQX"
 };
 
-const firebaseApp = firebase.initializeApp(firebaseConfig);
-const storage = firebaseApp.storage();
-const database = getFirestore();
+const firebaseApp = initializeApp(firebaseConfig);
+const storage = getStorage(firebaseApp);
+const database = getFirestore(firebaseApp);
 
 export { database, storage, firebaseApp };
