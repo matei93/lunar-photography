@@ -1,0 +1,60 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: lighter;
+  font-size: x-small;
+}
+
+.logoFooter {
+  height: 35px;
+  width: 35px;
+  padding-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.logoFooter:hover {
+  transform: scale(1.1);
+}
+
+.footer-line {
+  border-top: 1px solid rgb(6, 6, 6);
+  padding-top: 30px;
+}
+
+.icon-link {
+  text-decoration: none;
+  color: rgb(157, 156, 156);
+  margin: 0 10px;
+  transition: all 0.3s ease;
+}
+
+.icon-link:hover {
+  color: #090909;
+  transform: translateY(-2px);
+}
+
+.icon-link i {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 20px 10px;
+  }
+
+  .icon-link {
+    margin: 0 8px;
+  }
+
+  .icon-link i {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+}

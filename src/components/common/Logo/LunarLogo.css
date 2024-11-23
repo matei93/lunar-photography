@@ -1,0 +1,28 @@
+.lunar-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.lunar-logo:hover {
+  transform: scale(1.02);
+}
+
+/* Add cursor feedback for clickable element */
+.lunar-logo:active {
+  transform: scale(0.98);
+}
+
+/* Make it keyboard accessible */
+.lunar-logo:focus {
+  outline: none;
+}
+
+.lunar-logo:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+  border-radius: 4px;
+}
